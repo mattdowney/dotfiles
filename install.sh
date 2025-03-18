@@ -61,5 +61,39 @@ if [ -f "$DOTFILES_DIR/.prettierrc" ]; then
   ln -sf "$DOTFILES_DIR/.prettierrc" "$HOME/.prettierrc"
 fi  # ✅ This was missing before
 
+# Install Volta (Node.js version manager)
+if ! command -v volta &>/dev/null; then
+  echo "⚡ Installing Volta (Node.js version manager)..."
+  curl https://get.volta.sh | bash
+else
+  echo "✅ Volta is already installed."
+fi
+
+# Ensure Volta is in the PATH
+export PATH="$HOME/.volta/bin:$PATH"
+
+# Install latest Node.js via Volta
+if ! command -v node &>/dev/null; then
+  echo "🟢 Installing latest Node.js via Volta..."
+  volta install node
+fi
+
+# Install PHP
+if ! command -v php &>/dev/null; then
+  echo "🐘 Installing PHP..."
+  brew install php
+else
+  echo "✅ PHP is already installed."
+fi
+
+# Install Composer
+if ! command -v composer &>/dev/null; then
+  echo "🎼 Installing Composer..."
+  brew install composer
+else
+  echo "✅ Composer is already installed."
+fi
+
+
 echo "✅ Setup complete! Restart your terminal for changes to take effect."
 
