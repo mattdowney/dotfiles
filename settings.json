@@ -1,0 +1,114 @@
+{
+  "telemetry.telemetryLevel": "off",
+  "workbench.startupEditor": "none",
+  "editor.minimap.enabled": false,
+  "editor.scrollBeyondLastColumn": 0,
+  "editor.scrollBeyondLastLine": false,
+  "explorer.confirmDelete": false,
+  "editor.wordWrap": "on",
+  "git.ignoreMissingGitWarning": true,
+  "editor.formatOnPaste": true,
+  "html.format.indentInnerHtml": true,
+  "editor.renderWhitespace": "all",
+  "workbench.colorTheme": "Tokyo Night",
+  "editor.inlineHints.fontFamily": "JetBrains Mono, Cascadia Code Regular, Menlo, Monaco, Courier New, monospace",
+  "mssql.connections": [],
+  "editor.fontLigatures": true,
+  "explorer.confirmDragAndDrop": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "files.autoSaveDelay": 10000,
+  "testing.autoRun.delay": 10003,
+  "git.confirmSync": false,
+  "files.exclude": {
+    "**/build": true,
+    "node_modules": true
+  },
+  "git-autoconfig.configList": [
+    {
+      "user.email": "m.downey@kmrgrp.com",
+      "user.name": "kmrfoundation"
+    },
+    {
+      "user.email": "matt@mattdowney.com",
+      "user.name": "mattdowney"
+    }
+  ],
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "editor.autoClosingBrackets": "always",
+  "files.associations": {
+    "*.liquid": "liquid",
+    "*.php": "php"
+  },
+  "php.suggest.basic": false,
+  "php.validate.enable": false,
+  "emmet.excludeLanguages": ["markdown"],
+  "php.executables": {},
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.accessibilitySupport": "off",
+  "emmet.includeLanguages": {
+    "php": "html"
+  },
+  "window.zoomLevel": 1,
+  "workbench.editor.empty.hint": "hidden",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "prettier.configPath": ".prettierrc",
+  "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false
+  },
+  "task.autoDetect": "off",
+  "cursor.chat.smoothStreaming": true,
+  "cursor.cmdk.useThemedDiffBackground": true,
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  "terminal.integrated.shellArgs.linux": ["-l"],
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.statusBar.visible": true,
+  "cursor.general.gitGraphIndexing": "enabled",
+  "update.releaseTrack": "prerelease",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  "tailwindCSS.includeLanguages": {
+    "javascript": "html",
+    "javascriptreact": "html",
+    "typescriptreact": "html"
+  },
+  "prettier.tailwindConfig": "./tailwind.config.js",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.autoImportFileExcludePatterns": ["*.spec.tsx", "*.test.tsx"],
+  "terminal.integrated.cwd": "${workspaceFolder}",
+  "auto-run-command.commands": [{
+    "command": "npm install",
+    "delay": 500
+  }],
+  "react.developer.experience": "high",
+  "html.autoClosingTags": true,
+  "shadcn.ui.autoImport": true
+}
