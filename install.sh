@@ -94,6 +94,34 @@ else
   echo "✅ Composer is already installed."
 fi
 
+# Install global npm packages via Volta
+echo "📦 Installing global npm packages..."
+volta install pnpm yarn eslint typescript
+
+# Install Oh My Zsh (if missing)
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+  echo "🐚 Installing Oh My Zsh..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+
+# Install Zsh plugins
+ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
+if [ ! -d "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]; then
+  echo "🔧 Installing Zsh Autosuggestions..."
+  git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+fi
+
+if [ ! -d "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" ]; then
+  echo "🌈 Installing Zsh Syntax Highlighting..."
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+fi
+
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m' # No Color
+
+echo -e "${GREEN}✅ Setup complete! Restart your terminal for changes to take effect.${NC}"
+
 
 echo "✅ Setup complete! Restart your terminal for changes to take effect."
 
