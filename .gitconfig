@@ -1,0 +1,15 @@
+[user]
+    name = Matt Downey
+    email = matt@mattdowney.com
+
+[core]
+    editor = nano
+    autocrlf = input
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    cm = commit -m
+    lg = log --oneline --graph --decorate --all
+
