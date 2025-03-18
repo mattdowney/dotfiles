@@ -40,7 +40,8 @@ if ! command -v pnpm &>/dev/null; then
 fi
 
 # Set up dotfiles directory
-DOTFILES_DIR="$HOME/dotfiles"
+DOTFILES_DIR="$HOME/Code/Personal/dotfiles"
+
 
 if [ ! -d "$DOTFILES_DIR" ]; then
   echo "❌ Dotfiles directory not found!"
