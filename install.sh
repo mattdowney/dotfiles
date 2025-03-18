@@ -18,28 +18,6 @@ echo "📦 Installing essential CLI tools..."
 brew install git gh fzf ripgrep wget jq
 
 # Install PHP & Composer
-if
-
-#!/bin/bash
-
-echo "🔧 Starting full system setup..."
-
-# Ensure Homebrew is installed
-if ! command -v brew &>/dev/null; then
-  echo "🍺 Installing Homebrew..."
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-else
-  echo "✅ Homebrew is already installed."
-fi
-
-# Ensure Homebrew is in the PATH
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# Install essential CLI tools
-echo "📦 Installing essential CLI tools..."
-brew install git gh fzf ripgrep wget jq
-
-# Install PHP & Composer
 if ! command -v php &>/dev/null; then
   echo "🐘 Installing PHP..."
   brew install php
@@ -81,7 +59,7 @@ ln -sf "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 if [ -f "$DOTFILES_DIR/.prettierrc" ]; then
   echo "🎨 Linking Prettier config..."
   ln -sf "$DOTFILES_DIR/.prettierrc" "$HOME/.prettierrc"
-fi
+fi  # ✅ This was missing before
 
 echo "✅ Setup complete! Restart your terminal for changes to take effect."
 
